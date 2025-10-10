@@ -42,7 +42,7 @@ def edit_task():
         return
     else:
 
-        show_tasks(header=False)
+        show_tasks(header = False)
 
         try:
             edit_index: int = int(input(f'\nEnter task number: '))
@@ -151,7 +151,7 @@ def help_manual(header: bool = True):
 
     ### DISPLAY MANUAL
 
-    manual = Table(show_header=False, border_style=Style(color='red'), min_width=50)
+    manual = Table(show_header = False, border_style = Style(color='red'), min_width = 50)
 
     # Define columns (no headers)
     manual.add_column('', justify='center', style='bold red')
